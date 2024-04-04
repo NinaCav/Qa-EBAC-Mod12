@@ -1,0 +1,17 @@
+documentação para setar baseURL
+https://docs.cypress.io/guides/references/best-practices#Setting-a-Global-baseUrl
+
+dentro do cypress.config.js colocar o endereço base que vai ser usado
+e2e: {
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
+    baseUrl: 'http://lojaebac.ebaconline.art.br/'
+  },
+  desta forma.
+  Depois nos cenários poderemos usar apenas o complemento para indicar onde será feito o teste, como por exemplo: 
+  cy.visit('minha-conta/')
+
+  na pasta fixtures podemos seguir a mesma logica do baseUrl porém para setar um login, por exemplo. Como usar um mesmo login para todos os testes.
+
+  Na pasta support temos o arquivo commands, onde podemos ver alguns exemplos de comandos para utilizar. Como por exemplo o de login
