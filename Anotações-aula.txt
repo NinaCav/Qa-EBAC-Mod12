@@ -15,3 +15,4 @@ e2e: {
   na pasta fixtures podemos seguir a mesma logica do baseUrl porém para setar um login, por exemplo. Como usar um mesmo login para todos os testes.
 
   Na pasta support temos o arquivo commands, onde podemos ver alguns exemplos de comandos para utilizar. Como por exemplo o de login
+  
